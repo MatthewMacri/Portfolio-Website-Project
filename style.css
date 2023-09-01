@@ -1,0 +1,255 @@
+/* General */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85,85,85);
+}
+
+/* TRANSITION */
+
+a, .btn {
+   transition: all 300ms ease;
+}
+
+
+/* DESKTOP NAV */
+
+nav, .nav-links {
+    display: flex;
+}
+
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links  a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+ 
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/* PROFILE PICTURE */
+
+#profile {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Make the section take up the full viewport height */
+}
+
+.section__pic-container {
+    flex: 0 0 50%; /* Take up 50% of the available width */
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right side */
+    align-items: center; /* Vertically center the image */
+    padding-right: 50px; /* Add some spacing from the right side */
+
+    /* Adjust the width and height for the larger profile picture */
+    width: 60%; /* Adjust the width to your preference */
+    height: auto; /* Height will adjust to maintain aspect ratio */
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Hides the parts of the image outside the circle */
+}
+
+.profile-pic {
+    width: 100%; /* Ensures the image covers the container */
+    height: 100%; /* Allows the image to maintain aspect ratio */
+    display: block; /* Removes any extra space below the image */
+}
+
+.section__text {
+    flex: 1; /* Take up the remaining width */
+    padding-left: 50px; /* Add some spacing from the left side */
+}
+
+/* Additional styles for the text */
+.section__text p,
+.section__text h1,
+.section__text p {
+    margin: 0; /* Reset margins for text elements */
+}
+
+/* SECTIONS */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p1 {
+   font-size: 1.75rem;
+   margin-bottom: 1rem;
+}
+
+.title { 
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
