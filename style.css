@@ -146,46 +146,6 @@ a:hover {
     transform: none;
 }
 
-/* PROFILE PICTURE */
-
-#profile {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    height: 100vh; /* Make the section take up the full viewport height */
-}
-
-.section__pic-container {
-    flex: 0 0 50%; /* Take up 50% of the available width */
-    display: flex;
-    justify-content: flex-end; /* Align the image to the right side */
-    align-items: center; /* Vertically center the image */
-    padding-right: 50px; /* Add some spacing from the right side */
-
-    /* Adjust the width and height for the larger profile picture */
-    width: 60%; /* Adjust the width to your preference */
-    height: auto; /* Height will adjust to maintain aspect ratio */
-    border-radius: 50%; /* Makes the container circular */
-    overflow: hidden; /* Hides the parts of the image outside the circle */
-}
-
-.profile-pic {
-    width: 100%; /* Ensures the image covers the container */
-    height: 100%; /* Allows the image to maintain aspect ratio */
-    display: block; /* Removes any extra space below the image */
-}
-
-.section__text {
-    flex: 1; /* Take up the remaining width */
-    padding-left: 50px; /* Add some spacing from the left side */
-}
-
-/* Additional styles for the text */
-.section__text p,
-.section__text h1,
-.section__text p {
-    margin: 0; /* Reset margins for text elements */
-}
 
 /* SECTIONS */
 
