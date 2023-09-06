@@ -1,3 +1,4 @@
+/* For screens up to 1400px width */
 @media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
@@ -8,7 +9,7 @@
     }
 }
 
-
+/* For screens up to 1200px width */
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
@@ -41,6 +42,7 @@
     }
 }
 
+/* For screens up to 600px width (phone screens) */
 @media screen and (max-width: 600px) {
     #contact, footer {
         height: 40vh;
@@ -89,5 +91,13 @@
     }
     .text-container {
         text-align: justify;
+    }
+
+    /* Add the following style to resize the about picture */
+    .about-pic {
+        max-width: 100px;
+        max-height: 100px;
+        width: auto;
+        height: auto;
     }
 }
