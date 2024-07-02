@@ -158,7 +158,7 @@ section {
 }
 
 .section-container {
-    display: flex;
+
 }
 
 /* PROFILE SECTION */
@@ -264,6 +264,21 @@ bt.btn-container {
 
 /* ABOUT SECTION */
 
+.about-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0; /* Add margin to create space around the image */
+}
+
+.about-new-image {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    border-radius: 10px; /* Optional: add rounded corners */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
 #about {
     position: relative;
 }
@@ -283,24 +298,6 @@ flex-direction: column;
     display: flex;
 }
 
-.about-profile-pic {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: auto; 
-    max-width: 100%; 
-    margin-bottom: 2rem; 
-}
-
-.about-pic {
-    border-radius: 2rem;
-    max-width: 200px; 
-    max-height: 200px;
-    width: auto; 
-    height: auto; 
-    margin: 0 auto 2rem; 
-}
-
 .arrow { 
     position: absolute;
     right: -5rem;
@@ -309,7 +306,8 @@ flex-direction: column;
 
 .details-container { 
     padding: 1.5rem;
-    flex: 1;
+    flex: 2;
+    display: inline-flexbox;
     background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -352,7 +350,7 @@ flex-direction: column;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 0rem;
     justify-content: space-around;
 }
 
@@ -444,4 +442,68 @@ article.icon {
  footer p {
     text-align: center;
  }
+
+ /* Base styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        font-size: 1.5em;
+    }
+
+    .content {
+        font-size: 1em;
+    }
+
+    .footer {
+        font-size: 0.8em;
+    }
+}
+
+/* Styles for tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        padding: 20px;
+    }
+
+    .header {
+        font-size: 2em;
+    }
+
+    .content {
+        font-size: 1.2em;
+    }
+
+    .footer {
+        font-size: 1em;
+    }
+}
+
+/* Styles for laptops and desktops */
+@media (min-width: 901px) {
+    .container {
+        padding: 30px;
+    }
+
+    .header {
+        font-size: 2.5em;
+    }
+
+    .content {
+        font-size: 1.5em;
+    }
+
+    .footer {
+        font-size: 1.2em;
+    }
+}
  

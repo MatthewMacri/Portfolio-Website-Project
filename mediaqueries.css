@@ -100,4 +100,10 @@
         width: auto;
         height: auto;
     }
+
+    /* Responsive styles for the new image */
+    .about-new-image {
+        max-width: 90%; /* Adjust as needed */
+        height: auto;
+    }
 }
