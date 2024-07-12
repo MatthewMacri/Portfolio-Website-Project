@@ -8,16 +8,20 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <!-- Include i18next library -->
+    <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@1.3.1/dist/umd/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.3/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Matthew Macri </div>
+        <div class="logo">Matthew Macri</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about"> About</a></li>
-                <li><a href="#experience"> Experience</a></li>
-                <li><a href="#projects"> Projects</a></li>
-                <li><a href="#contacts"> Contacts</a></li>
+                <li><a href="#about" data-i18n="about">About</a></li>
+                <li><a href="#experience" data-i18n="experience">Experience</a></li>
+                <li><a href="#projects" data-i18n="projects">Projects</a></li>
+                <li><a href="#contacts" data-i18n="contacts">Contacts</a></li>
             </ul>
         </div>
     </nav>
@@ -30,10 +34,10 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()"> About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()"> Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()"> Projects</a></li>
-                <li><a href="#contacts" onclick="toggleMenu()"> Contacts</a></li>
+                <li><a href="#about" data-i18n="about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" data-i18n="experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" data-i18n="projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contacts" data-i18n="contacts" onclick="toggleMenu()">Contacts</a></li>
             </div>
         </div>
     </nav>
@@ -42,13 +46,13 @@
             <img src="./assets/1718231391870.jpg" alt="Matthew Macri's profile picture" class="profile-pic" />
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm </p>
+            <p class="section__text__p1" data-i18n="hello">Hello, I'm</p>
             <h1 class="title">Matthew Macri</h1>
-            <p class="section__text__p2">Computer Science Student</p>
+            <p class="section__text__p2" data-i18n="student">Computer Science Student</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Matthew_Macris_CV_French_Part-Time.pdf')">Télécharger CV</button>
-                <button class="btn btn-color-2" onclick="window.open('./assets/Matthew_Macris_CV_English_Part-Time.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/Matthew_Macris_CV_French_Part-Time.pdf')" data-i18n="download_cv_fr">Télécharger CV</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/Matthew_Macris_CV_English_Part-Time.pdf')" data-i18n="download_cv_en">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'" data-i18n="contact_info">Contact Info</button>
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/matthew-macri-aa2981288/'" />
@@ -57,148 +61,152 @@
         </div>
     </section>
     <section id="about">
-        <p class="section__text__p1"> Get To Know More</p>
-        <h1 class="title"> About Me</h1>
+        <p class="section__text__p1" data-i18n="get_to_know">Get To Know More</p>
+        <h1 class="title" data-i18n="about_me">About Me</h1>
         <div class="section-container">
-            <div class="section__pic-container about-profile-pic">
-                <!-- <img src="./assets/about-pic.png" alt="New Image" class="about-new-image"> -->
-
+            <div class="text-container">
+                <p class="spaced-paragraph" data-i18n="intro">
+                    I'm a Computer Science Technology student at Vanier College, 
+                    actively seeking internships or part-time opportunities. I'm
+                    passionate about 
+                    computers and plan to pursue a degree in Software 
+                    Engineering or Computer Engineering, either at Concordia or McGill University after graduation.
+                </p>
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
                         <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-                        <h3>Experience</h3>
-                        <p1>Since 2022</p1>
+                        <h3 data-i18n="experience">Experience</h3>
+                        <p1 data-i18n="since">Since 2022</p1>
                         <br> 
-                        <p>Full Stack Development</p>
+                        <p data-i18n="full_stack">Full Stack Development</p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" alt="education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p1>Winter 2023 - Present</p1>
-                        <p>Vanier College <br> DEC in Computer Science</p>
+                        <h3 data-i18n="education">Education</h3>
+                        <p1 data-i18n="dates">Winter 2023 - Present</p1>
+                        <p data-i18n="vanier_college">Vanier College <br> DEC in Computer Science</p>
                     </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        I'm a Computer Science Technology student at Vanier College, actively seeking part-time opportunities. I'm passionate about software engineering and plan to pursue a degree in Software Engineering at Concordia or McGill University after graduation.
-                    </p>
                 </div>
             </div>
         </div>
-        <div class="about-image-container">
-        </div>
+        <div class="about-image-container"></div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
     </section>
     <section id="certifications">
-        <p class="section__text__p1">Check Out My</p>
-        <h1 class="title">Certification(s)</h1>
+        <p class="section__text__p1" data-i18n="check_out">Check Out My</p>
+        <h1 class="title" data-i18n="certifications">Certification(s)</h1>
         <div class="certifications-container">
             <div class="details-container color-container">
-                <h2 class="experience-sub-title">Harvard CS50</h2>
+                <h2 class="experience-sub-title" data-i18n="harvard_cs50">Harvard CS50</h2>
                 <img src="./assets/Harvard_University_coat_of_arms.svg.png" alt="Harvard Logo" class="certification-logo">
-                <p>
+                <p data-i18n="cs50_cert">
                     I have completed the prestigious Harvard CS50 course. You can view my certificate 
-                    <a href="https://certificates.cs50.io/5572db50-8abc-4b00-abb7-4c755588edcd.pdf?size=letter" target="_blank" class="btn btn-color-2 project-btn">here</a>.
+                    <a href="https://certificates.cs50.io/5572db50-8abc-4b00-abb7-4c755588edcd.pdf?size=letter" target="_blank" class="btn btn-color-2 project-btn" data-i18n="here">here</a>.
                 </p>
             </div>
         </div>
     </section>
-    
     <section id="experience">
-        <p class="section__text__p1"> Explore My </p>
-        <h1 class="title">Experience(s)</h1>
+        <p class="section__text__p1" data-i18n="explore_my">Explore My</p>
+        <h1 class="title" data-i18n="experiences">Experience(s)</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <h2 class="experience-sub-title" data-i18n="frontend_dev">Frontend Development</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <h3 data-i18n="html">HTML</h3>
+                                <p data-i18n="experienced">Experienced</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
+                                <h3 data-i18n="css">CSS</h3>
+                                <p data-i18n="experienced">Experienced</p>
                             </div>
+                        </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
+                                <h3 data-i18n="javascript">JavaScript</h3>
+                                <p data-i18n="basic">Basic</p>
                             </div>
                         </article>
                     </div>
                 </div>
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <h2 class="experience-sub-title" data-i18n="backend_dev">Backend Development</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>PostgreSQL</h3>
-                                <p>Basic</p>
+                                <h3 data-i18n="postgresql">PostgreSQL</h3>
+                                <p data-i18n="basic">Basic</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>Python</h3>
-                                <p>Basic</p>
+                                <h3 data-i18n="python">Python</h3>
+                                <p data-i18n="basic">Basic</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>Note JS</h3>
-                                <p>Intermediate</p>
+                                <h3 data-i18n="nodejs">Node JS</h3>
+                                <p data-i18n="intermediate">Intermediate</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>Java</h3>
-                                <p>Advanced</p>
+                                <h3 data-i18n="java">Java</h3>
+                                <p data-i18n="advanced">Advanced</p>
                             </div>
                         </article>
                     </div>
                 </div>
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Job(s)</h2>
+                    <h2 class="experience-sub-title" data-i18n="jobs">Job(s)</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/DNDcanadianFLAG.jpg" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>Field Service Technician</h3>
-                                <p>I interned as a Field Service Technician at the Ministry of Defence,
+                                <h3 data-i18n="field_tech">Field Service Technician</h3>
+                                <p data-i18n="field_tech_desc">
+                                    I interned as a Field Service Technician at the Ministry of Defence,
                                     providing IT support across Quebec. I resolved hardware and software
                                     issues, managed backups, and offered technical training. Additionally,
                                     I contributed to IT asset acquisition and lifecycle management.
-                                    </p>
+                                </p>
                             </div>
                         </article>
                         <article>
-                             <img src="./assets/aw_food_services_of_canada_logo.jpg" alt="Experience icon" class="icon" />
+                            <img src="./assets/aw_food_services_of_canada_logo.jpg" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>Cashier</h3>
-                                <p>I prioritize customer care by providing friendly and attentive service to
+                                <h3 data-i18n="cashier">Cashier</h3>
+                                <p data-i18n="cashier_desc">
+                                    I prioritize customer care by providing friendly and attentive service to
                                     foster loyalty. Additionally, I maintain a clean and inviting dining area,
                                     ensuring A&W's operational standards are met.
-                                    </p>
+                                </p>
                             </div>
+                        </article>
                         <article>
                             <img src="./assets/cinemas_guzzo_logo.jpg" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>Usher</h3>
-                                <p>I previously held the position of a cinema usher, where my duties encompassed seating patrons,
+                                <h3 data-i18n="usher">Usher</h3>
+                                <p data-i18n="usher_desc">
+                                    I previously held the position of a cinema usher, where my duties encompassed seating patrons,
                                     ensuring post-screening cleanliness, and occasionally managing concessions, including beverages and
-                                    popcorn.</p>
+                                    popcorn.
+                                </p>
                             </div>
                         </article>
                     </div>
@@ -206,43 +214,44 @@
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
-    </section>
+    </section>    
    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Project(s)</h1>
+        <p class="section__text__p1" data-i18n="browse_my">Browse My Recent</p>
+        <h1 class="title" data-i18n="projects">Project(s)</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container color-container">
                     <div class="article-container">
                         <img src="./assets/cs50Finance.png" alt="Project 1" class="project-img">
                     </div>
-                    <h2 class="experience-sub-title project-title">Project 1 (cs50 Finance)</h2>
-                    <p>
+                    <h2 class="experience-sub-title project-title" data-i18n="project1">Project 1 (cs50 Finance)</h2>
+                    <p data-i18n="project1_desc">
                         My GitHub repository "Finance-CS50-Project" features a financial application I developed for the CS50 course, 
-                        including user authentication, stock trading, and portfolio management.</p>
+                        including user authentication, stock trading, and portfolio management.
+                    </p>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MatthewMacri/Finance-CS50-Project'">GitHub</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MatthewMacri/Finance-CS50-Project'" data-i18n="github">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'" data-i18n="live_demo">Live Demo</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
                          <img src="./assets/project-img.jpg" alt="Project 2" class="project-img"> 
                     </div>
-                    <h2 class="experience-sub-title project-title">Project Two (UNDER DEVELOPMENT)</h2>
+                    <h2 class="experience-sub-title project-title" data-i18n="project2">Project Two (UNDER DEVELOPMENT)</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MatthewMacri?tab=projects'">GitHub</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MatthewMacri?tab=projects'" data-i18n="github">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'" data-i18n="live_demo">Live Demo</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
                          <img src="./assets/project-img.jpg" alt="Project 3" class="project-img">
                     </div>
-                    <h2 class="experience-sub-title project-title">Project Three (UNDER DEVELOPMENT)</h2>
+                    <h2 class="experience-sub-title project-title" data-i18n="project3">Project Three (UNDER DEVELOPMENT)</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MatthewMacri?tab=projects'">GitHub</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MatthewMacri?tab=projects'" data-i18n="github">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'" data-i18n="live_demo">Live Demo</button>
                     </div>
                 </div>
             </div>
@@ -250,8 +259,8 @@
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
      </section>
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
+        <p class="section__text__p1" data-i18n="get_in_touch">Get in Touch</p>
+        <h1 class="title" data-i18n="contact_me">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon" />
@@ -267,15 +276,45 @@
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li><a href="#about"> About</a></li>
-                    <li><a href="#experience"> Experience</a></li>
-                    <li><a href="#projects"> Projects</a></li>
-                    <li><a href="#contacts"> Contacts</a></li>
+                    <li><a href="#about" data-i18n="about">About</a></li>
+                    <li><a href="#experience" data-i18n="experience">Experience</a></li>
+                    <li><a href="#projects" data-i18n="projects">Projects</a></li>
+                    <li><a href="#contacts" data-i18n="contacts">Contacts</a></li>
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2023 Matthew Macri. All Rights Reserved.</p>
+        <p>&#169; 2023 Matthew Macri. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            i18next
+                .use(i18nextHttpBackend)
+                .use(i18nextBrowserLanguageDetector)
+                .init({
+                    fallbackLng: 'en',
+                    backend: {
+                        loadPath: '/locales/{{lng}}/translation.json',
+                    },
+                }, function(err, t) {
+                    // init set content
+                    updateContent();
+                });
+
+            function updateContent() {
+                document.querySelectorAll("[data-i18n]").forEach(function(element) {
+                    element.innerHTML = i18next.t(element.getAttribute("data-i18n"));
+                });
+            }
+
+            i18next.on('languageChanged', function() {
+                updateContent();
+            });
+
+            window.changeLanguage = function(lng) {
+                i18next.changeLanguage(lng);
+            };
+        });
+    </script>
 </body>
 </html>
