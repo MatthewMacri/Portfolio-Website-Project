@@ -119,5 +119,24 @@ html, body {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   }
 
+  .card {
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card-img-top {
+    height: 220px;
+    object-fit: contain; /* prevents distortion, good for logos */
+    background-color: #f8fafc; /* subtle background for contrast */
+    padding: 1rem;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+  }
+  
   
   
