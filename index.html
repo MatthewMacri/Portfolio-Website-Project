@@ -1,85 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew Macri Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
-    <script src="https://unpkg.com/i18next-http-backend@1.3.1/dist/umd/i18nextHttpBackend.min.js"></script>
-    <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.3/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="#">Matthew Macri</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about" data-i18n="about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="contacts">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matthew Macri | Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-    <!-- Hero Section -->
-    <section id="profile" class="hero-section bg-light py-5 text-center">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h1>Hello, I'm <span class="text-primary">Matthew Macri</span></h1>
-                    <p class="lead">A Passionate Computer Science Student</p>
-                    <a href="#contact" class="btn btn-primary mt-3">Contact Me</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="./assets/1718231391870.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
-                </div>
-            </div>
+</head>
+<body class="bg-dark text-light">
+    <div id="particles-js"></div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">Matthew Macri</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="overlay-bg">
+    <!-- Hero -->
+    <section id="profile" class="hero-section text-center d-flex align-items-center">
+      <div class="container">
+        <h1>Hello, I'm <span class="text-accent">Matthew Macri</span></h1>
+        <p class="lead">A Passionate Computer Science Student</p>
+        <a href="#contact" class="btn btn-accent mt-3 animated-button">Contact Me</a>
+      </div>
     </section>
 
-<!-- About Section -->
-<section id="about" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-4" style="font-weight: bold;">About Me</h2>
-        <div class="row align-items-center gy-4">
-            <!-- Profile Text -->
+    <section id="about" class="section-bg animated-bg">
+        <div class="container">
+          <h2 class="section-title text-center mb-5">About Me</h2>
+          <div class="row align-items-center g-5 fade-in">
+      
+            <!-- Text -->
             <div class="col-lg-8">
-                <div class="p-4 bg-white rounded shadow">
-                    <p class="lead mb-4">
-                        I am a <strong>Computer Science Technology student</strong> at <strong>Vanier College</strong>, with a deep passion for software development and a commitment to mastering cutting-edge technologies. I am actively seeking opportunities to expand my knowledge and contribute to impactful projects.
-                    </p>
-                    <h5 class="fw-bold" style="color: black; "text-primary">Education</h5>
-                    <hr class="mt-2 mb-3">
-                    <ul class="list-unstyled">
-                        <li><strong>Program:</strong> DEC in Computer Science Technology</li>
-                        <li><strong>Institution:</strong> Vanier College</li>
-                        <li><strong>Focus:</strong> Software development, problem-solving, and hands-on technical skills</li>
-                    </ul>
-                </div>
+              <div class="card-custom p-4">
+                <p>
+                  I’m a <strong>Computer Science Technology student</strong> at <strong>Vanier College</strong>, passionate about innovation, software development, and mastering cutting-edge tools to build meaningful tech.
+                </p>
+                <h5 class="fw-bold text-accent mt-4">Education</h5>
+                <hr>
+                <ul class="list-unstyled">
+                  <li><strong>Program:</strong> DEC in Computer Science Technology</li>
+                  <li><strong>Institution:</strong> Vanier College</li>
+                  <li><strong>Focus:</strong> Software Development, Problem Solving, Agile Methodologies</li>
+                </ul>
+              </div>
             </div>
-            <!-- School Logo -->
+      
+            <!-- Visual / Logo -->
             <div class="col-lg-4 text-center">
-    <div class="p-4 bg-white rounded shadow d-flex flex-column align-items-center">
-        <img src="./assets/about-pic.png" alt="Vanier College Logo" class="img-fluid mb-3" style="max-width: 200px;"> 
-        <h5 class="fw-bold mb-0" style="color: red; font-size: 1.2rem;">Vanier College</h5>
-        <p class="small text-muted mt-2">Proudly shaping the next generation of tech innovators.</p>
-    </div>
-</div>
+              <div class="card-custom d-flex flex-column align-items-center p-4">
+                <img src="./assets/about-pic.png" alt="Vanier College Logo" class="img-fluid mb-3" style="max-width: 160px;">
+                <h5 class="fw-bold text-danger">Vanier College</h5>
+                <p class="small text-secondary mt-2">Proudly shaping future tech innovators.</p>
+              </div>
+            </div>
+      
+          </div>
         </div>
-    </div>
-</section>
+      </section>
+  
 
 <!-- Experience Section -->
-<section id="experience" class="py-5 bg-light">
+<section id="experience" class="py-5 text-center">
     <div class="container">
         <h2 class="text-center mb-4">My Experiences</h2>
         <div class="row g-4">
@@ -181,7 +179,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light text-center">
+    <section id="contact" class="py-5 text-center">
         <div class="container">
             <h2>Contact Me</h2>
             <p>Email: <a href="mailto:matthewmacri11@gmail.com" class="text-primary">matthewmacri11@gmail.com</a></p>
@@ -189,11 +187,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-3 bg-dark text-white text-center">
+    <footer class="text-center py-3">
         <p>&copy; 2024 Matthew Macri. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+      </footer>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="script.js"></script>
+    </body>
+    </html>

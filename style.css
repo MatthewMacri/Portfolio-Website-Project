@@ -1,16 +1,123 @@
-/* Adjust Hero Section Text Size */
-.hero-section h1 {
-    font-size: 1.5rem; /* Smaller font size */
-    font-weight: 600; /* Ensure visibility */
-    margin-bottom: 1rem; /* Add space below */
-}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    position: relative;
+    background: linear-gradient(-45deg, #0a0f1a, #1e293b, #2563eb, #0a0f1a);
+    background-size: 400% 400%;
+    animation: gradientShift 20s ease infinite;
+    color: #d1d5db;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  #site-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    color: #3b82f6;
+  }
+  
+  .text-accent {
+    color: #3b82f6;
+  }
+  
+  .btn-accent {
+    background-color: #3b82f6;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+  }
+  .btn-accent:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 0 10px #60a5fa;
+  }
+  
+  /* Hero section */
+  .hero-section {
+    min-height: 100vh;
+    padding: 5rem 0;
+  }
+  
+  /* Card style */
+  .card-custom {
+    background-color: #1e293b;
+    color: #d1d5db;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid #334155;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card-custom:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.2);
+  }
+  
+  /* Animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInSlide 1.2s ease-out forwards;
+  }
+  @keyframes fadeInSlide {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3b82f6;
+  }
+  
+  body, p, li, span, .lead, .card-text {
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+  }
 
-.hero-section h1 span {
-    font-size: 1.5rem; /* Slightly larger for emphasis */
-    color: #007bff; /* Highlight */
-}
+  .overlay-bg {
+    background-color: rgba(10, 15, 26, 0.85); /* your base bg-dark color with transparency */
+    padding: 2rem 0;
+  }
 
-.hero-section p {
-    font-size: 1.2rem; /* Smaller size for subtitle */
-    color: #555; /* Muted color for secondary text */
-}
+  .card-body {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: black; /* Much lighter than before */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  
+  
