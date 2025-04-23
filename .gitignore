@@ -1,0 +1,41 @@
+# Ignore Node and build artifacts (in case you use tools like Webpack later)
+node_modules/
+dist/
+build/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore temporary/editor files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
+
+# Ignore Netlify settings (if not used)
+netlify.toml
+
+# Ignore Mac/VSCode junk
+.vscode/
+.idea/
+
+# Ignore Python stuff (in case any script snuck in)
+__pycache__/
+*.py[cod]
+
+# Optional: ignore secret config files (Firebase keys etc. if added later)
+.env
+.env.*
+
+# Output folders (optional)
+.sass-cache/
+.cache/
+out/
+
+# Ignore zip exports (if you ever export the site or bundle it)
+*.zip
