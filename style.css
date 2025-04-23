@@ -1,142 +1,171 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    height: auto;
-    min-height: 100%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  body {
-    position: relative;
-    background: linear-gradient(-45deg, #0a0f1a, #1e293b, #2563eb, #0a0f1a);
-    background-size: 400% 400%;
-    animation: gradientShift 20s ease infinite;
-    color: #d1d5db;
-  }
-  
-  @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  
-  #particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    pointer-events: none;
-  }
-  
-  #site-wrapper {
-    position: relative;
-    z-index: 1;
-  }
-  
-  /* Typography */
-  h1, h2, h3, h4, h5, h6 {
-    color: #3b82f6;
-  }
-  
-  .text-accent {
-    color: #3b82f6;
-  }
-  
-  .btn-accent {
-    background-color: #3b82f6;
-    border: none;
-    color: white;
-    font-weight: 600;
-    padding: 0.75rem 1.5rem;
-    transition: all 0.3s ease;
-  }
-  .btn-accent:hover {
-    background-color: #1d4ed8;
-    box-shadow: 0 0 10px #60a5fa;
-  }
-  
-  /* Hero section */
-  .hero-section {
-    min-height: 100vh;
-    padding: 5rem 0;
-  }
-  
-  /* Card style */
-  .card-custom {
-    background-color: #1e293b;
-    color: #d1d5db;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    border: 1px solid #334155;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .card-custom:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 12px rgba(59, 130, 246, 0.2);
-  }
-  
-  /* Animation */
-  .fade-in {
-    opacity: 0;
-    transform: translateY(40px);
-    animation: fadeInSlide 1.2s ease-out forwards;
-  }
-  @keyframes fadeInSlide {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .section-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #3b82f6;
-  }
-  
-  body, p, li, span, .lead, .card-text {
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
-  }
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .overlay-bg {
-    background-color: rgba(10, 15, 26, 0.85); /* your base bg-dark color with transparency */
-    padding: 2rem 0;
-  }
+body {
+  position: relative;
+  background: linear-gradient(-45deg, #0a0f1a, #1e293b, #2563eb, #0a0f1a);
+  background-size: 400% 400%;
+  animation: gradientShift 20s ease infinite;
+  color: #d1d5db;
+}
 
-  .card-body {
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-  }
-  
-  .card-text {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: black; /* Much lighter than before */
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  }
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-  .card {
-    border-radius: 0.75rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+#site-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #3b82f6;
+}
+
+.text-accent {
+  color: #3b82f6;
+}
+
+/* Buttons */
+.btn-accent {
+  background-color: #3b82f6;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+.btn-accent:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0 0 10px #60a5fa;
+}
+
+/* Hero section */
+.hero-section {
+  min-height: 100vh;
+  padding: 5rem 0;
+}
+
+/* Card style */
+.card-custom {
+  background-color: #1e293b;
+  color: #d1d5db;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid #334155;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-custom:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.2);
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInSlide 1.2s ease-out forwards;
+}
+@keyframes fadeInSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  }
-  
-  .card-img-top {
-    height: 220px;
-    object-fit: contain; /* prevents distortion, good for logos */
-    background-color: #f8fafc; /* subtle background for contrast */
-    padding: 1rem;
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
-  }
-  
-  
-  
+}
+
+/* Text Enhancements */
+body, p, li, span, .lead, .card-text {
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Section Background Overlay */
+.overlay-bg {
+  background-color: rgba(10, 15, 26, 0.85);
+  padding: 2rem 0;
+}
+
+/* Card Body */
+.card-body {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Project Card Text */
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: black;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* Card Hover Effects */
+.card {
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Card Image Styling */
+.card-img-top {
+  height: 220px;
+  object-fit: contain;
+  background-color: #f8fafc;
+  padding: 1rem;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+/* Light Mode Styling */
+body.light-mode {
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+body.light-mode .card-custom {
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+body.light-mode .btn-accent {
+  background-color: #2563eb;
+  color: white;
+}
+
+body.light-mode .navbar, body.light-mode footer {
+  background-color: #e2e8f0 !important;
+  color: #1e293b;
+}
+
+body.light-mode h1, body.light-mode h2, body.light-mode .text-accent {
+  color: #1e40af;
+}

@@ -8,10 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class="bg-dark text-light">
-    <div id="particles-js"></div>
+  <div id="particles-js"></div>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
       <div class="container">
@@ -20,190 +21,201 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto me-3">
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
             <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
+          <button id="theme-toggle" class="btn btn-outline-light">Toggle Theme</button>
         </div>
       </div>
     </nav>
   </header>
 
   <main class="overlay-bg">
-    <!-- Hero -->
-    <section id="profile" class="hero-section text-center d-flex align-items-center">
-      <div class="container">
-        <h1>Hello, I'm <span class="text-accent">Matthew Macri</span></h1>
-        <p class="lead">A Passionate Computer Science Student</p>
-        <a href="#contact" class="btn btn-accent mt-3 animated-button">Contact Me</a>
-      </div>
-    </section>
-
-    <section id="about" class="section-bg animated-bg">
-        <div class="container">
-          <h2 class="section-title text-center mb-5">About Me</h2>
-          <div class="row align-items-center g-5 fade-in">
-      
-            <!-- Text -->
-            <div class="col-lg-8">
-              <div class="card-custom p-4">
-                <p>
-                  I’m a <strong>Computer Science Technology student</strong> at <strong>Vanier College</strong>, passionate about innovation, software development, and mastering cutting-edge tools to build meaningful tech.
-                </p>
-                <h5 class="fw-bold text-accent mt-4">Education</h5>
-                <hr>
-                <ul class="list-unstyled">
-                  <li><strong>Program:</strong> DEC in Computer Science Technology</li>
-                  <li><strong>Institution:</strong> Vanier College</li>
-                  <li><strong>Focus:</strong> Software Development, Problem Solving, Agile Methodologies</li>
-                </ul>
-              </div>
-            </div>
-      
-            <!-- Visual / Logo -->
-            <div class="col-lg-4 text-center">
-              <div class="card-custom d-flex flex-column align-items-center p-4">
-                <img src="./assets/about-pic.png" alt="Vanier College Logo" class="img-fluid mb-3" style="max-width: 160px;">
-                <h5 class="fw-bold text-danger">Vanier College</h5>
-                <p class="small text-secondary mt-2">Proudly shaping future tech innovators.</p>
-              </div>
-            </div>
-      
-          </div>
-        </div>
-      </section>
-  
-
-<!-- Experience Section -->
-<section id="experience" class="py-5 text-center">
-    <div class="container">
-        <h2 class="text-center mb-4">My Experiences</h2>
-        <div class="row g-4">
-            <!-- Job 1: Field Service Technician -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card shadow-sm h-100">
-                    <img src="./assets/DNDcanadianFLAG.jpg" class="card-img-top" alt="Ministry of Defence">
-                    <div class="card-body">
-                        <h5 class="card-title">Field Service Technician</h5>
-                        <p class="card-text">
-                            Interned at the Ministry of Defence, providing IT support across Quebec. Managed IT assets,
-                            resolved technical issues, and conducted training sessions.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Job 2: Cashier -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card shadow-sm h-100">
-                    <img src="./assets/aw_food_services_of_canada_logo.png" class="card-img-top" alt="A&W Food Services">
-                    <div class="card-body">
-                        <h5 class="card-title">Cashier</h5>
-                        <p class="card-text">
-                            Delivered exceptional customer service at A&W, ensuring a welcoming dining experience and
-                            maintaining operational standards.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Job 3: Customer Service Representative -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card shadow-sm h-100">
-                    <img src="./assets/LogoTokidos_400_Darkmode_576592a1-ba79-4802-9ac2-7a93e50c899e.avif" class="card-img-top" alt="Tokidos">
-                    <div class="card-body">
-                        <h5 class="card-title">Customer Service Representative</h5>
-                        <p class="card-text">
-                            Currently managing customer support operations through Shopify Inbox and email communication channels. 
-                            Responsibilities include efficiently resolving customer inquiries and issues by leveraging AWS CloudWatch Log Insights 
-                            to monitor and analyze relevant system logs, ensuring timely and effective solutions.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Job 4: Facility Caretaker -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card shadow-sm h-100">
-                    <img src="./assets/Andritz_Logo.svg" class="card-img-top" alt="ANDRITZ Hydro Canada">
-                    <div class="card-body">
-                        <h5 class="card-title">Facility Caretaker</h5>
-                        <p class="card-text">
-                            Conduct routine inspections and maintenance of office facilities, manage cleaning tasks to ensure hygiene and safety, 
-                            assist with logistics while handling confidential information, and prepare weekly timesheets for supervisor approval.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- HERO SECTION -->
+<section id="profile" class="hero-section text-center d-flex align-items-center" data-aos="fade-up">
+  <div class="container">
+    <h1>Hello, I'm <span class="text-accent">Matthew Macri</span></h1>
+    <p class="lead mb-3">Aspiring software developer eager to gain real-world experience and contribute to impactful teams.</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="#contact" class="btn btn-accent animated-button">Contact Me</a>
     </div>
+  </div>
 </section>
 
-
-<!-- Projects Section -->
-<section id="projects" class="py-5 text-center">
+<!-- ABOUT SECTION -->
+<section id="about" class="section-bg animated-bg" data-aos="fade-up">
   <div class="container">
-    <h2 class="mb-5 section-title">Projects</h2>
-    <div class="row g-4">
-      <!-- VanierHacks 2025 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="./assets/about-pic.png" class="card-img-top" alt="VanierHacks 2025">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">VanierHacks 2025</h5>
-            <p class="card-text">Earned an honourable mention as part of Team "Unreliables" for code quality. Rapid prototyping and teamwork under pressure.</p>
-            <a href="https://www.vaniercollege.qc.ca/news/great-success-for-the-first-vanier-hacks" class="btn btn-primary mt-auto" target="_blank">Event Details</a>
-          </div>
+    <h2 class="section-title text-center mb-5">About Me</h2>
+    <div class="row align-items-center g-5 fade-in">
+      <div class="col-lg-8">
+        <div class="card-custom p-4">
+          <p>I am a <strong>Computer Science Technology student</strong> at <strong>Vanier College</strong>, currently seeking a summer internship where I can grow as a programmer and contribute to an innovative team.</p>
+          <h5 class="fw-bold text-accent mt-4">Education</h5>
+          <hr>
+          <ul class="list-unstyled">
+            <li><strong>Program:</strong> DEC in Computer Science Technology</li>
+            <li><strong>Institution:</strong> Vanier College</li>
+            <li><strong>Years:</strong> Jan 2023 - Jan 2026</li>
+            <li><strong>Honors:</strong> Dean’s List — Winter 2023, Fall 2023, Fall 2024</li>
+          </ul>
+
+          <h5 class="fw-bold text-accent mt-4">Skills</h5>
+          <hr>
+          <ul class="list-inline">
+            <li class="list-inline-item badge bg-secondary m-1">HTML</li>
+            <li class="list-inline-item badge bg-secondary m-1">CSS</li>
+            <li class="list-inline-item badge bg-secondary m-1">JavaScript</li>
+            <li class="list-inline-item badge bg-secondary m-1">SQL</li>
+            <li class="list-inline-item badge bg-secondary m-1">Java</li>
+            <li class="list-inline-item badge bg-secondary m-1">C#</li>
+            <li class="list-inline-item badge bg-secondary m-1">PHP</li>
+            <li class="list-inline-item badge bg-secondary m-1">Dart</li>
+            <li class="list-inline-item badge bg-secondary m-1">Flutter</li>
+            <li class="list-inline-item badge bg-secondary m-1">JSON</li>
+            <li class="list-inline-item badge bg-secondary m-1">AWS</li>
+            <li class="list-inline-item badge bg-secondary m-1">Jira</li>
+            <li class="list-inline-item badge bg-secondary m-1">GitHub</li>
+            <li class="list-inline-item badge bg-secondary m-1">Command Line</li>
+          </ul>
+
+          <h5 class="fw-bold text-accent mt-4">Certifications</h5>
+          <hr>
+          <ul class="list-unstyled">
+            <li><a href="https://courses.edx.org/certificates/e7bdf8efa8394cac8878576bbc9cf09a" target="_blank" class="text-primary">CS50: Introduction to Computer Science – Harvard (edX)</a></li>
+            <li>First Aid – CNESST (Quebec workplace safety board)</li>
+          </ul>
         </div>
       </div>
 
-      <!-- CS50 Finance App -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="./assets/hqdefault.jpg" class="card-img-top" alt="CS50 Finance App">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">CS50 Finance App</h5>
-            <p class="card-text">A stock trading simulation platform with real-time stock quotes, built using Flask, SQLite, and API integration.</p>
-            <a href="https://github.com/MatthewMacri/Finance-CS50-Project" class="btn btn-primary mt-auto" target="_blank">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bell Hackathon -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="./assets/Event Card Geekfest 2023.png" class="card-img-top" alt="Bell Hackathon 2023">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Bell Hackathon 2023</h5>
-            <p class="card-text">Developed a secure digital vault app. Focused on cybersecurity, user authentication, and seamless UI/UX.</p>
-            <a href="https://github.com/MatthewMacri/QuebecHackathon2023" class="btn btn-primary mt-auto" target="_blank">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- McGill Hackathon -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="./assets/mcgill-university-logo.jpg" class="card-img-top" alt="McGill Physics Hackathon 2023">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">McGill Physics Hackathon 2023</h5>
-            <p class="card-text">Built interactive physics simulations and visualizations. Explored real-time data insights and team-based problem-solving.</p>
-            <a href="https://hackathon.physics.mcgill.ca" class="btn btn-primary mt-auto" target="_blank">Hackathon Website</a>
-          </div>
+      <div class="col-lg-4 text-center">
+        <div class="card-custom d-flex flex-column align-items-center p-4">
+          <img src="./assets/about-pic.png" alt="Vanier College Logo" class="img-fluid mb-3" style="max-width: 160px;">
+          <h5 class="fw-bold text-danger">Vanier College</h5>
+          <p class="small text-secondary mt-2">Proudly shaping future tech innovators.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- EXPERIENCE SECTION -->
+<section id="experience" class="py-5 text-center" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-4">Professional Experience</h2>
+    <div class="row g-4">
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 text-center">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:matthewmacri11@gmail.com" class="text-primary">matthewmacri11@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/m-macri/" class="text-primary" target="_blank">Matthew Macri</a></p>
+      <!-- DND -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="./assets/DNDcanadianFLAG.jpg" class="card-img-top" alt="DND">
+          <div class="card-body">
+            <h5 class="card-title">Field Service Technician – DND</h5>
+            <p class="card-text">Provided IT support across Quebec. Managed backups, resolved hardware/software issues, and led technical training sessions. Contributed to asset acquisition and lifecycle tracking.</p>
+          </div>
         </div>
-    </section>
+      </div>
+
+      <!-- Tokidos -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="./assets/LogoTokidos_400_Darkmode_576592a1-ba79-4802-9ac2-7a93e50c899e.avif" class="card-img-top" alt="Tokidos">
+          <div class="card-body">
+            <h5 class="card-title">Customer Support – Tokidos</h5>
+            <p class="card-text">Providing technical support using Shopify Inbox and email. Analyze issues using AWS CloudWatch Log Insights and ensure customer satisfaction with accurate and timely resolutions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ANDRITZ -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="./assets/Andritz_Logo.svg" class="card-img-top" alt="ANDRITZ">
+          <div class="card-body">
+            <h5 class="card-title">Facility Caretaker – ANDRITZ Hydro Canada</h5>
+            <p class="card-text">Performed routine inspections and maintenance, managed hygiene and cleaning, assisted with logistics, and compiled timesheets weekly.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- A&W -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="./assets/aw_food_services_of_canada_logo.png" class="card-img-top" alt="A&W">
+          <div class="card-body">
+            <h5 class="card-title">Cashier – A&W</h5>
+            <p class="card-text">Delivered friendly and efficient customer service while maintaining cleanliness and upholding company standards.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Euro Gear -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="./assets/about-pic.png" class="card-img-top" alt="Euro Gear">
+          <div class="card-body">
+            <h5 class="card-title">Mechanical Assembler – Euro Gear</h5>
+            <p class="card-text">Disassembled and reassembled critical components for industrial rollers using precision tools and mechanical schematics.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="py-5 text-center" data-aos="fade-up">
+  <div class="container">
+    <h2 class="mb-5 section-title">Events & Hackathons</h2>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="./assets/about-pic.png" class="card-img-top" alt="Vanier Hacks">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">VanierHacks 2025</h5>
+            <p class="card-text">Earned an honourable mention for coding quality. Collaborated on a fast-paced team project with innovative solutions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="./assets/mcgill-university-logo.jpg" class="card-img-top" alt="McGill Hackathon">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">McGill Physics Hackathon 2023</h5>
+            <p class="card-text">Built real-time simulations and data visualizations in a 24-hour team challenge.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="./assets/Event Card Geekfest 2023.png" class="card-img-top" alt="Bell Hackathon">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Bell Hackathon 2023</h5>
+            <p class="card-text">Engineered a secure vault app with authentication and sleek UI/UX.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-5 text-center" data-aos="fade-up">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:matthewmacri11@gmail.com" class="text-primary">matthewmacri11@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/m-macri/" class="text-primary" target="_blank">Matthew Macri</a></p>
+    <p>Website: <a href="https://matthewmacri.github.io/Portfolio-Website-Project" class="text-primary" target="_blank">My Portfolio</a></p>
+  </div>
+</section>
+
 
     <footer class="text-center py-3">
         <p>&copy; 2025 Matthew Macri. All Rights Reserved.</p>
@@ -211,5 +223,5 @@
     
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
       <script src="script.js"></script>
-    </body>
-    </html>
+      </body>
+      </html>
