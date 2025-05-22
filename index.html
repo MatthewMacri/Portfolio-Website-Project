@@ -1,176 +1,116 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="3uMo6KNPxFGBLUsRCFDpKu4BhCsn6Qlty_Jv8Qbfs54" />
-    <meta name="description" content="Matthew Macri's portfolio — Computer Science student at Vanier College. Showcasing experience in software development, Flutter, Firebase, cybersecurity, and more." />
-    <meta name="keywords" content="Matthew Macri, Portfolio, Software Developer, Flutter, Firebase, Vanier College, C#, Java, PHP, Computer Science Student" />
-    
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Matthew Macri | Software Developer Portfolio" />
-    <meta property="og:description" content="Explore Matthew Macri's experience in development, cybersecurity, and hackathons. Currently studying at Vanier College." />
-    <meta property="og:image" content="https://matthewmacri.github.io/Portfolio-Website-Project/assets/about-pic.png" />
-    <meta property="og:url" content="https://matthewmacri.github.io/Portfolio-Website-Project" />
-    <meta property="og:type" content="website" />
-  
-    <title>Matthew Macri | Software Developer Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  </head>
-  
-<body class="bg-dark text-light">
-  <div id="particles-js"></div>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-      <div class="container">
-        <a class="navbar-brand" href="#">Matthew Macri</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto me-3">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-          <button id="theme-toggle" class="btn btn-outline-light">Toggle Theme</button>
-        </div>
-      </div>
-    </nav>
-  </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Matthew Macri's portfolio — Computer Science student at Vanier College" />
+  <meta name="keywords" content="Matthew Macri, Portfolio, Software Developer, Flutter, Firebase, Vanier College" />
+  <meta name="author" content="Matthew Macri">
+  <title>Matthew Macri | Software Developer Portfolio</title>
 
-  <main class="overlay-bg">
-<!-- HERO SECTION -->
-<section id="profile" class="hero-section text-center d-flex align-items-center" data-aos="fade-up">
-  <div class="container">
-    <h1>Hello, I'm <span class="text-accent">Matthew Macri</span></h1>
-    <p class="lead mb-3">Aspiring software developer eager to gain real-world experience and contribute to impactful teams.</p>
-    <div class="d-flex justify-content-center gap-3 flex-wrap">
-      <a href="#contact" class="btn btn-accent animated-button">Contact Me</a>
+  <!-- Bootstrap & AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Matthew Macri</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- ABOUT SECTION -->
-<section id="about" class="section-bg animated-bg" data-aos="fade-up">
-  <div class="container">
-    <h2 class="section-title text-center mb-5">About Me</h2>
-    <div class="row align-items-center g-5 fade-in">
-      <div class="col-lg-8">
-        <div class="card-custom p-4">
-          <p>I am a <strong>Computer Science Technology student</strong> at <strong>Vanier College</strong>, currently seeking a summer internship where I can grow as a programmer and contribute to an innovative team.</p>
-          <h5 class="fw-bold text-accent mt-4">Education</h5>
-          <hr>
-          <ul class="list-unstyled">
-            <li><strong>Program:</strong> DEC in Computer Science Technology</li>
-            <li><strong>Institution:</strong> Vanier College</li>
-            <li><strong>Years:</strong> Jan 2023 - Jan 2026</li>
-            <li><strong>Honors:</strong> Dean’s List — Winter 2023, Fall 2023, Fall 2024</li>
-          </ul>
+  <!-- Hero Section -->
+  <section class="hero" id="profile" data-aos="fade-in">
+    <div class="container">
+      <h1>Hello, I'm <span class="text-accent">Matthew Macri</span></h1>
+      <p>Aspiring software developer eager to turn ideas into reality with code.</p>
+      <a href="#contact" class="btn btn-outline-light btn-lg">Let's Connect</a>
+    </div>
+  </section>
 
-          <h5 class="fw-bold text-accent mt-4">Skills</h5>
-          <hr>
-          <ul class="list-inline">
-            <li class="list-inline-item badge bg-secondary m-1">HTML</li>
-            <li class="list-inline-item badge bg-secondary m-1">CSS</li>
-            <li class="list-inline-item badge bg-secondary m-1">JavaScript</li>
-            <li class="list-inline-item badge bg-secondary m-1">SQL</li>
-            <li class="list-inline-item badge bg-secondary m-1">Java</li>
-            <li class="list-inline-item badge bg-secondary m-1">C#</li>
-            <li class="list-inline-item badge bg-secondary m-1">PHP</li>
-            <li class="list-inline-item badge bg-secondary m-1">Dart</li>
-            <li class="list-inline-item badge bg-secondary m-1">Flutter</li>
-            <li class="list-inline-item badge bg-secondary m-1">JSON</li>
-            <li class="list-inline-item badge bg-secondary m-1">AWS</li>
-            <li class="list-inline-item badge bg-secondary m-1">Jira</li>
-            <li class="list-inline-item badge bg-secondary m-1">GitHub</li>
-            <li class="list-inline-item badge bg-secondary m-1">Command Line</li>
-          </ul>
-
-          <h5 class="fw-bold text-accent mt-4">Certifications</h5>
-          <hr>
-          <ul class="list-unstyled">
-            <li><a href="https://courses.edx.org/certificates/e7bdf8efa8394cac8878576bbc9cf09a" target="_blank" class="text-primary">CS50: Introduction to Computer Science – Harvard (edX)</a></li>
-            <li>First Aid – CNESST (Quebec workplace safety board)</li>
-          </ul>
+  <!-- About -->
+  <section id="about" class="section-bg" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <div class="card-custom p-4">
+            <p>I’m currently pursuing a <strong>DEC in Computer Science Technology</strong> at <strong>Vanier College</strong>, making the Dean’s List three times. Passionate about building efficient, user-friendly apps and learning new technologies.</p>
+            <h5 class="mt-3">Skills:</h5>
+            <div>
+              <span class="badge bg-secondary m-1">HTML</span>
+              <span class="badge bg-secondary m-1">CSS</span>
+              <span class="badge bg-secondary m-1">JavaScript</span>
+              <span class="badge bg-secondary m-1">Java</span>
+              <span class="badge bg-secondary m-1">C#</span>
+              <span class="badge bg-secondary m-1">PHP</span>
+              <span class="badge bg-secondary m-1">Flutter</span>
+              <span class="badge bg-secondary m-1">AWS</span>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="col-lg-4 text-center">
-        <div class="card-custom d-flex flex-column align-items-center p-4">
-          <img src="./assets/about-pic.png" alt="Vanier College Logo" class="img-fluid mb-3" style="max-width: 160px;">
-          <h5 class="fw-bold text-danger">Vanier College</h5>
-          <p class="small text-secondary mt-2">Proudly shaping future tech innovators.</p>
+        <div class="col-md-4 text-center">
+          <div class="card-custom p-4">
+            <img src="./assets/about-pic.png" alt="Vanier College Logo" class="profile-pic-small mb-3" />
+            <h5 class="text-accent">Vanier College</h5>
+            <p>Shaping tech innovators.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- EXPERIENCE SECTION -->
-<section id="experience" class="py-5 text-center" data-aos="fade-up">
+<!-- Experience -->
+<section id="experience" data-aos="fade-up">
   <div class="container">
-    <h2 class="text-center mb-4">Professional Experience</h2>
+    <h2 class="section-title">Experience</h2>
     <div class="row g-4">
 
       <!-- DND -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow-sm h-100">
-          <img src="./assets/DNDcanadianFLAG.jpg" class="card-img-top" alt="DND">
-          <div class="card-body">
-            <h5 class="card-title">Field Service Technician – DND</h5>
-            <p class="card-text">Provided IT support across Quebec. Managed backups, resolved hardware/software issues, and led technical training sessions. Contributed to asset acquisition and lifecycle tracking.</p>
-          </div>
+      <div class="col-md-4">
+        <div class="card-custom text-center p-4">
+          <img src="./assets/DNDcanadianFLAG.jpg" alt="DND Logo" class="img-fit mb-3" />
+          <h5>Field Service Technician – DND</h5>
+          <p class="text-accent mb-2">May 2024 – Aug 2024</p>
+          <p>IT support, backups, and training across Quebec.</p>
         </div>
       </div>
 
       <!-- Tokidos -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow-sm h-100">
-          <img src="./assets/LogoTokidos_400_Darkmode_576592a1-ba79-4802-9ac2-7a93e50c899e.avif" class="card-img-top" alt="Tokidos">
-          <div class="card-body">
-            <h5 class="card-title">Customer Support – Tokidos</h5>
-            <p class="card-text">Providing technical support using Shopify Inbox and email. Analyze issues using AWS CloudWatch Log Insights and ensure customer satisfaction with accurate and timely resolutions.</p>
-          </div>
+      <div class="col-md-4">
+        <div class="card-custom text-center p-4">
+          <img src="./assets/LogoTokidos_400_Darkmode_576592a1-ba79-4802-9ac2-7a93e50c899e.avif" 
+               alt="Tokidos" class="img-fit mb-3" />
+          <h5>Customer Support – Tokidos</h5>
+          <p class="text-accent mb-2">Nov 2024 – Present</p>
+          <p>Shopify Inbox support & AWS CloudWatch analysis.</p>
         </div>
       </div>
 
-      <!-- ANDRITZ -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow-sm h-100">
-          <img src="./assets/Andritz_Logo.svg" class="card-img-top" alt="ANDRITZ">
-          <div class="card-body">
-            <h5 class="card-title">Facility Caretaker – ANDRITZ Hydro Canada</h5>
-            <p class="card-text">Performed routine inspections and maintenance, managed hygiene and cleaning, assisted with logistics, and compiled timesheets weekly.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- A&W -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow-sm h-100">
-          <img src="./assets/aw_food_services_of_canada_logo.png" class="card-img-top" alt="A&W">
-          <div class="card-body">
-            <h5 class="card-title">Cashier – A&W</h5>
-            <p class="card-text">Delivered friendly and efficient customer service while maintaining cleanliness and upholding company standards.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Euro Gear -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow-sm h-100">
-          <img src="./assets/about-pic.png" class="card-img-top" alt="Euro Gear">
-          <div class="card-body">
-            <h5 class="card-title">Mechanical Assembler – Euro Gear</h5>
-            <p class="card-text">Disassembled and reassembled critical components for industrial rollers using precision tools and mechanical schematics.</p>
-          </div>
+      <!-- Andritz -->
+      <div class="col-md-4">
+        <div class="card-custom text-center p-4">
+          <img src="./assets/Andritz_Logo.svg" alt="Andritz" class="img-fit mb-3" />
+          <h5>Facility Caretaker – Andritz</h5>
+          <p class="text-accent mb-2">Dec 2024 – Present</p>
+          <p>Maintenance, inspections, and logistics coordination.</p>
         </div>
       </div>
 
@@ -178,62 +118,94 @@
   </div>
 </section>
 
-<!-- PROJECTS SECTION -->
-<section id="projects" class="py-5 text-center" data-aos="fade-up">
-  <div class="container">
-    <h2 class="mb-5 section-title">Events & Hackathons</h2>
-    <div class="row g-4">
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="./assets/about-pic.png" class="card-img-top" alt="Vanier Hacks">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">VanierHacks 2025</h5>
-            <p class="card-text">Earned an honourable mention for coding quality. Collaborated on a fast-paced team project with innovative solutions.</p>
+  <!-- Projects -->
+  <section id="projects" class="section-bg" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">Projects & Hackathons</h2>
+      <div class="row g-4">
+        <!-- VanierHacks -->
+        <div class="col-md-4">
+          <div class="card-custom text-center p-4">
+            <img src="./assets/about-pic.png" alt="VanierHacks" class="project-img" />
+            <h5>VanierHacks 2025</h5>
+            <p>Honourable mention for coding quality.</p>
+          </div>
+        </div>
+        <!-- McGill Hackathon -->
+        <div class="col-md-4">
+          <div class="card-custom text-center p-4">
+            <img src="./assets/mcgill-university-logo.jpg" alt="McGill Hackathon" class="project-img" />
+            <h5>McGill Physics Hackathon 2023</h5>
+            <p>Real-time simulations & data viz.</p>
+          </div>
+        </div>
+        <!-- Bell Hackathon -->
+        <div class="col-md-4">
+          <div class="card-custom text-center p-4">
+            <img src="./assets/Event Card Geekfest 2023.png" alt="Bell Hackathon" class="project-img" />
+            <h5>Bell Hackathon 2023</h5>
+            <p>Secure vault app with sleek UI.</p>
+          </div>
+        </div>
+        <!-- Inventory Management System -->
+        <div class="col-md-4">
+          <div class="card-custom text-center p-4">
+            <img src="./assets/sysdev-login-preview.jpg" alt="Inventory Management System" class="project-img" />
+            <h5>Project/Inventory Management System</h5>
+            <p>A PHP & Vite-powered web app. Secure login, CRUD, 2FA, QR export, role-based access.</p>
+            <a href="https://matthewmacri.ca/sysdev/resources/views/login/loginview.php" target="_blank" class="btn btn-outline-light btn-sm m-1">Live Demo</a>
+            <a href="https://github.com/MatthewMacri/SysDevProject" target="_blank" class="btn btn-outline-light btn-sm m-1">View Code</a>
+          </div>
+        </div>
+        <!-- School Registration -->
+        <div class="col-md-4">
+          <div class="card-custom text-center p-4">
+            <img src="./assets/school-registration-preview.png" alt="School Registration System" class="project-img" />
+            <h5>School Registration System</h5>
+            <p>Java portal for students, teachers & admins. OOP, DS, design patterns.</p>
+            <a href="https://github.com/MatthewMacri/Programming-Patterns-Project" target="_blank" class="btn btn-outline-light btn-sm m-1">View Code</a>
+          </div>
+        </div>
+        <!-- Gym App -->
+        <div class="col-md-4">
+          <div class="card-custom text-center p-4">
+            <img src="./assets/gym-app-preview.jpg" alt="Flutter Gym App" class="project-img" />
+            <h5>Gym App (Flutter)</h5>
+            <p>Workout logging, user login & smooth navigation in Flutter.</p>
+            <a href="https://github.com/MatthewMacri/AppDevProject" target="_blank" class="btn btn-outline-light btn-sm m-1">View Code</a>
+          </div>
+        </div>
+        <!-- Car Reservation -->
+        <div class="col-md-4">
+          <div class="card-custom text-center p-4">
+            <img src="./assets/car-reservation-preview.png" alt="Car Reservation System" class="project-img" />
+            <h5>Car Reservation System</h5>
+            <p>C# desktop app. Admin/Customer roles, availability filtering, multilingual UI.</p>
+            <a href="https://github.com/MatthewMacri/Application-Development-Project" target="_blank" class="btn btn-outline-light btn-sm m-1">View Code</a>
           </div>
         </div>
       </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="./assets/mcgill-university-logo.jpg" class="card-img-top" alt="McGill Hackathon">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">McGill Physics Hackathon 2023</h5>
-            <p class="card-text">Built real-time simulations and data visualizations in a 24-hour team challenge.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="./assets/Event Card Geekfest 2023.png" class="card-img-top" alt="Bell Hackathon">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Bell Hackathon 2023</h5>
-            <p class="card-text">Engineered a secure vault app with authentication and sleek UI/UX.</p>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CONTACT SECTION -->
-<section id="contact" class="py-5 text-center" data-aos="fade-up">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:matthewmacri11@gmail.com" class="text-primary">matthewmacri11@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/m-macri/" class="text-primary" target="_blank">Matthew Macri</a></p>
-    <p>Website: <a href="https://matthewmacri.github.io/Portfolio-Website-Project" class="text-primary" target="_blank">My Portfolio</a></p>
-  </div>
-</section>
+  <!-- Contact -->
+  <section id="contact" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="section-title">Get in Touch</h2>
+      <p>Email: <a href="mailto:matthewmacri11@gmail.com" class="text-light text-decoration-underline">matthewmacri11@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/m-macri/" target="_blank" class="text-light text-decoration-underline">/in/m-macri</a></p>
+    </div>
+  </section>
 
+  <footer>
+    &copy; 2025 Matthew Macri. All Rights Reserved.
+  </footer>
 
-    <footer class="text-center py-3">
-        <p>&copy; 2025 Matthew Macri. All Rights Reserved.</p>
-      </footer>
-    
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="script.js"></script>
-      </body>
-      </html>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 800 });
+  </script>
+</body>
+</html>
