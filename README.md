@@ -1,19 +1,95 @@
-# My Personal Portfolio
+# Portfolio Website
 
-Welcome to my personal website, [matthew-macri.com](https://matthewmacri.github.io/Portfolio-Website-Project/), a comprehensive portfolio and professional hub showcasing my technical expertise, projects, and work experience. I've designed this site to offer a clean and engaging user experience, highlighting my skills and achievements across various sections. On the home page, you'll find an introduction to me, featured projects, and the latest blog posts.
+A responsive, modern portfolio website showcasing professional experience, technical skills, projects, and hackathon achievements.
 
-In the "About Me" section, you can read an in-depth look at my biography, including my professional journey, education, personal interests, technical skills, and multilingual capabilities in English, French, and Spanish. My professional journey has been diverse and enriching, providing me with a robust skill set that I continuously develop. I have a strong foundation in computer science, having pursued my studies at Vanier College, where I honed my skills in various programming languages, including PHP, and developed a deep understanding of Linux and Ubuntu systems. My multilingual abilities enable me to communicate effectively in diverse environments, enhancing my ability to collaborate on international projects and with global teams.
+## Features
 
-In the "Projects" section, I've included a portfolio of my work, with descriptions, technologies used, and links to repositories or live demos. Each project represents a significant learning experience and an opportunity to solve real-world problems using technology. Some projects feature detailed case studies, outlining the problem, solution, and impact. These case studies provide insight into my problem-solving approach, the technologies I employed, and the outcomes achieved. I believe that sharing these detailed narratives helps others understand the depth and breadth of my technical expertise and the practical applications of my skills.
+- Clean, responsive design optimized for all device sizes
+- Sections for About, Experience, Projects, and Contact
+- Project showcase with links to live demos and repositories
+- Professional experience timeline
+- Skills display with technology badges
+- Contact section with email and social media links
 
-The blog section contains articles and tutorials on various technology topics, organized for easy navigation. Through my blog, I aim to share knowledge, provide insights into the latest industry trends, and offer tutorials that can help others in their learning journeys. The articles cover a wide range of subjects, from programming tips and tricks to in-depth analyses of emerging technologies. I am passionate about continuous learning and enjoy sharing my discoveries and insights with the community. The blog section is regularly updated with new content, reflecting my ongoing engagement with the tech world and my commitment to staying current with industry developments.
+## Tech Stack
 
-In the "Resume" section, you'll find detailed descriptions of my work experience, particularly my role as a Field Service Technician at the Department of National Defence, where I focus on resolving technical issues, managing IT assets, and conducting training sessions. My role at the Department of National Defence has been instrumental in developing my problem-solving skills and my ability to work under pressure. It has provided me with hands-on experience in a high-stakes environment, where precision and reliability are paramount. This experience has not only enhanced my technical skills but also honed my ability to communicate complex technical information effectively.
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5.3.1
+- AOS (Animate On Scroll) library
+- Responsive design
 
-Additionally, this section includes my educational background, highlighting my Computer Science studies at Vanier College. My education has provided me with a solid foundation in computer science principles and practices, which I continually build upon through practical experience and self-directed learning. You can also download my resume in PDF format, which provides a comprehensive overview of my skills, experiences, and accomplishments.
+## Project Sections
 
-If you'd like to get in touch, the "Contact" section includes a form for professional inquiries and links to my social media profiles. Networking and collaboration are essential aspects of my professional life, and I am always open to new opportunities and connections. Whether you have a question, a project proposal, or just want to connect, feel free to reach out through the contact form or via my social media profiles. I am committed to responding promptly and engaging meaningfully with all inquiries.
+### About
+Overview of skills and background, including Computer Science studies at Vanier College. Displays proficiency across multiple technologies including HTML, CSS, JavaScript, Java, C#, PHP, Flutter, AWS, and more.
 
-My website is hosted on Netlify, ensuring fast load times and reliable performance. Netlify's robust hosting capabilities ensure that my website is always accessible and performs optimally, providing visitors with a smooth and responsive experience. The site features a fully responsive design, built with modern web technologies to ensure compatibility across various devices and screen sizes. Whether you are browsing on a desktop, tablet, or mobile device, you can expect a seamless and enjoyable experience.
+### Experience
+Professional timeline including positions at:
+- Tokidos (Full-stack Developer, Customer Support)
+- Department of National Defence (Field Service Technician)
+- Andritz (Facility Caretaker)
 
-This website is still under development, meaning that I am constantly working on it in my free time. I believe that a portfolio is a dynamic representation of one's professional journey, and as such, I am committed to continuously updating and improving the site. I appreciate your visit and your interest in my work. Please check back regularly for updates and new content. Thank you for visiting!
+### Projects & Hackathons
+Portfolio of academic and professional projects including:
+- VanierHacks 2025
+- McGill Physics Hackathon 2023
+- Bell Hackathon 2023
+- Tokidos KPI Dashboard
+- School Registration System
+- Car Reservation System (C#)
+- Gym App (Flutter)
+- Project/Inventory Management System (PHP)
+
+## Getting Started
+
+### Installation
+
+1. Clone the repository
+2. No dependencies required for local development
+3. Open `index.html` in a web browser
+
+### Running Locally
+
+For development with live reload, use a local server:
+
+```bash
+# Using Python 3
+python -m http.server 8000
+
+# Or using Node.js http-server
+npx http-server
+```
+
+Then visit `http://localhost:8000` in your browser.
+
+## File Structure
+
+```
+.
+├── index.html       # Main portfolio page
+├── style.css        # Custom styling
+├── script.js        # Interactive functionality
+├── assets/          # Images and media files
+└── README.md        # This file
+```
+
+## Browser Support
+
+- Modern browsers (Chrome, Firefox, Safari, Edge)
+- Mobile responsive
+- Optimized for touch and mouse input
+
+## Deployment
+
+The site is configured for deployment to GitHub Pages or Netlify.
+
+## License
+
+MIT License - See LICENSE file for details
+
+## Contact
+
+Email: matthewmacri11@gmail.com
+LinkedIn: https://www.linkedin.com/in/m-macri/
