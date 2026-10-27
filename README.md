@@ -1,95 +1,75 @@
-# Portfolio Website
+![Developer Portfolio](assets/readme-banner.png)
 
-A responsive, modern portfolio website showcasing professional experience, technical skills, projects, and hackathon achievements.
+# Developer Portfolio
+
+> A responsive personal portfolio site showcasing my experience, projects, and hackathons — with a clean dark theme and scroll animations.
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
+![AOS](https://img.shields.io/badge/AOS-Animate_on_Scroll-6366f1)
+![License: MIT](https://img.shields.io/badge/License-MIT-green)
+
+---
+
+## Overview
+
+A single-page portfolio built with vanilla HTML, CSS, and JavaScript on top of Bootstrap 5. It presents who I am, where I've worked, and what I've built — responsive across phone, tablet, and desktop, with content that animates in as you scroll.
+
+## Preview
+
+![Portfolio site preview](assets/readme-preview.png)
 
 ## Features
 
-- Clean, responsive design optimized for all device sizes
-- Sections for About, Experience, Projects, and Contact
-- Project showcase with links to live demos and repositories
-- Professional experience timeline
-- Skills display with technology badges
-- Contact section with email and social media links
+- **Fully responsive** layout that adapts from mobile to widescreen
+- **Dark, modern theme** with accent highlights
+- **Scroll animations** via the AOS (Animate On Scroll) library
+- **Sections** for About, Experience, Projects & Hackathons, and Contact
+- **Experience timeline** with role cards (Tokidos, Department of National Defence, Andritz)
+- **Project grid** linking to live demos and source repositories
+- **SEO basics** — `sitemap.xml`, `robots.txt`, and semantic markup
 
 ## Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap 5.3.1
-- AOS (Animate On Scroll) library
-- Responsive design
-
-## Project Sections
-
-### About
-Overview of skills and background, including Computer Science studies at Vanier College. Displays proficiency across multiple technologies including HTML, CSS, JavaScript, Java, C#, PHP, Flutter, AWS, and more.
-
-### Experience
-Professional timeline including positions at:
-- Tokidos (Full-stack Developer, Customer Support)
-- Department of National Defence (Field Service Technician)
-- Andritz (Facility Caretaker)
-
-### Projects & Hackathons
-Portfolio of academic and professional projects including:
-- VanierHacks 2025
-- McGill Physics Hackathon 2023
-- Bell Hackathon 2023
-- Tokidos KPI Dashboard
-- School Registration System
-- Car Reservation System (C#)
-- Gym App (Flutter)
-- Project/Inventory Management System (PHP)
+| Layer | Tools |
+|-------|-------|
+| Markup & Style | HTML5, CSS3, Bootstrap 5.3 |
+| Interactivity | Vanilla JavaScript |
+| Animation | AOS (Animate On Scroll) |
+| Tooling | Static site — no build step required |
 
 ## Getting Started
 
-### Installation
-
-1. Clone the repository
-2. No dependencies required for local development
-3. Open `index.html` in a web browser
-
-### Running Locally
-
-For development with live reload, use a local server:
+Clone the repo and open it directly, or serve it locally for the best experience:
 
 ```bash
-# Using Python 3
-python -m http.server 8000
+git clone https://github.com/MatthewMacri/Portfolio-Website-Project.git
+cd Portfolio-Website-Project
 
-# Or using Node.js http-server
-npx http-server
+# Option 1 — open index.html in your browser
+# Option 2 — serve locally
+python3 -m http.server 8000   # then visit http://localhost:8000
 ```
 
-Then visit `http://localhost:8000` in your browser.
-
-## File Structure
+## Project Structure
 
 ```
 .
-├── index.html       # Main portfolio page
-├── style.css        # Custom styling
-├── script.js        # Interactive functionality
-├── assets/          # Images and media files
-└── README.md        # This file
+├── index.html      # Main portfolio page
+├── style.css       # Custom styling
+├── script.js       # Interactivity
+├── assets/         # Images, logos, and previews
+├── sitemap.xml     # SEO
+└── robots.txt
 ```
 
-## Browser Support
+## Author
 
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- Mobile responsive
-- Optimized for touch and mouse input
-
-## Deployment
-
-The site is configured for deployment to GitHub Pages or Netlify.
+**Matthew Macri** — Computer Science student at Vanier College
+[LinkedIn](https://www.linkedin.com/in/m-macri/) · [GitHub](https://github.com/MatthewMacri) · matthewmacri11@gmail.com
 
 ## License
 
-MIT License - See LICENSE file for details
-
-## Contact
-
-Email: matthewmacri11@gmail.com
-LinkedIn: https://www.linkedin.com/in/m-macri/
+Released under the [MIT License](LICENSE).
