@@ -67,7 +67,7 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 
 ## Author
 
-**Matthew Macri** — Computer Science student at Vanier College
+**Matthew Macri** — Computer Engineering student at Concordia University
 [LinkedIn](https://www.linkedin.com/in/m-macri/) · [GitHub](https://github.com/MatthewMacri) · matthewmacri11@gmail.com
 
 ## License
