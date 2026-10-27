@@ -19,7 +19,7 @@ A single-page portfolio built with vanilla HTML, CSS, and JavaScript on top of B
 
 ## Preview
 
-![Portfolio site preview](assets/readme-preview.png)
+![Portfolio site preview](assets/readme-preview.png?v=2)
 
 ## Features
 
